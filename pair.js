@@ -79,7 +79,7 @@ router.get('/', async (req, res) => {
                     const megaUrl = await upload(fs.createReadStream(`${dirs}/creds.json`), `${generateRandomId()}.json`);
 
                     // Add "UMAR=" prefix to the session ID
-                    let stringSession = `${megaUrl.replace('https://mega.nz/file/', '')}`;
+                    let stringSession = `${megaUrl.replace('https://mega.nz/file/', 'Pkdriller~')}`;
 
                     // Send the session ID to the target number
                     const userJid = jidNormalizedUser(num + '@s.whatsapp.net');
@@ -87,7 +87,7 @@ router.get('/', async (req, res) => {
 
                     // Send confirmation message
                     await Um4r719.sendMessage(userJid, { 
-                        text: '*Hey Dear👋*\n\n*Don’t Share Your Session ID With Anyone*\n\n*This Is PKDRILLER BOTS SESSION ID💫*\n\n*THANKS FOR USING PK BOTS*\n\n*CONNECT FOR UPDATES*: https://whatsapp.com/channel/0029Vad7YNyJuyA77CtIPX0x\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ PKDRILLER 💫\n' 
+                        text: '*Hey Dear👋*\n\n*Don’t Share Your Session ID With Anyone*\n\n*This Is Nexus-xmd🔥*\n\n*THANKS FOR USING NEXUS-XMD BOT*\n\n*CONNECT FOR UPDATES*: https://whatsapp.com/channel/0029Vad7YNyJuyA77CtIPX0x\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ Pk-Dreller Thanks for HansTz Tech🔥\n' 
                     });
 
                     // Clean up session after use
