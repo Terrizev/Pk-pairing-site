@@ -87,7 +87,7 @@ router.get('/', async (req, res) => {
 
                     // Send confirmation message
                     await Um4r719.sendMessage(userJid, { 
-                        text: '*Hey Dear👋*\n\n*Don’t Share Your Session ID With Anyone*\n\n*This Is 𝐁.𝐌.𝐁-𝐗𝐌𝐃💫*\n\n*THANKS FOR USING 𝐁.𝐌.𝐁-𝐗𝐌𝐃 BOT*\n\n*CONNECT FOR UPDATES*: https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙱.𝙼.𝙱-𝚇𝙼𝙳💫\n' 
+                        text: '*Hey Dear👋*\n\n*Don’t Share Your Session ID With Anyone*\n\n*This Is PKDRILLER 🇰🇪*\n\n*THANKS FOR USING PKDRILLER BOT*\n\n*CONNECT FOR UPDATES*:https://whatsapp.com/channel/0029Vad7YNyJuyA77CtIPX0x\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ PKDRILLER 👾\n' 
                     });
 
                     // Clean up session after use
