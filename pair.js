@@ -34,7 +34,7 @@ router.get('/', async (req, res) => {
             // Initialize socket connection
             const logger = pino({ level: 'info' }).child({ level: 'info' });
 
-            let Um4r719 = makeWASocket({
+            let Tohidkhan6332 = makeWASocket({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, logger),
@@ -44,19 +44,19 @@ router.get('/', async (req, res) => {
                 browser: ["Ubuntu", "Chrome", "20.0.04"],
             });
 
-            if (!Um4r719.authState.creds.registered) {
+            if (!Tohidkhan6332.authState.creds.registered) {
                 await delay(2000);
                 num = num.replace(/[^0-9]/g, '');
-                const code = await Um4r719.requestPairingCode(num);
+                const code = await Tohidkhan6332.requestPairingCode(num);
                 if (!res.headersSent) {
                     console.log({ num, code });
                     await res.send({ code });
                 }
             }
 
-            Um4r719.ev.on('creds.update', saveCreds);
+            Tohidkhan6332.ev.on('creds.update', saveCreds);
 
-            Um4r719.ev.on("connection.update", async (s) => {
+            Tohidkhan6332.ev.on("connection.update", async (s) => {
                 const { connection, lastDisconnect } = s;
 
                 if (connection === "open") {
@@ -83,11 +83,36 @@ router.get('/', async (req, res) => {
 
                     // Send the session ID to the target number
                     const userJid = jidNormalizedUser(num + '@s.whatsapp.net');
-                    await Um4r719.sendMessage(userJid, { text: stringSession });
+                    await Tohidkhan6332.sendMessage(userJid, { text: stringSession });
 
                     // Send confirmation message
-                    await Um4r719.sendMessage(userJid, { 
-                        text: '*Hey Dear👋*\n\n*Don’t Share Your Session ID With Anyone*\n\n*This Is PKDRILLER 🇰🇪*\n\n*THANKS FOR USING PKDRILLER BOT*\n\n*CONNECT FOR UPDATES*:https://whatsapp.com/channel/0029Vad7YNyJuyA77CtIPX0x\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ PKDRILLER 👾\n' 
+                    await Tohidkhan6332.sendMessage(userJid, { 
+                        text: `
+*SESSION GENERATED SUCCESSFULY* ✅
+
+*Gɪᴠᴇ ᴀ ꜱᴛᴀʀ ᴛᴏ ʀᴇᴘᴏ ꜰᴏʀ ᴄᴏᴜʀᴀɢᴇ* 🌟
+https://github.com/Tohidkhan6332/TOHID-AI
+
+*Tᴇʟᴇɢʀᴀᴍ Gʀᴏᴜᴘ* 🌟
+https://t.me/Tohid_Tech
+
+*WʜᴀᴛsAᴘᴘ Gʀᴏᴜᴘ* 🌟
+https://chat.whatsapp.com/IqRWSp7pXx8DIMtSgDICGu
+
+*WʜᴀᴛsAᴘᴘ ᴄʜᴇɴɴᴀʟ* 🌟
+https://whatsapp.com/channel/0029VaGyP933bbVC7G0x0i2T
+
+*Yᴏᴜ-ᴛᴜʙᴇ ᴛᴜᴛᴏʀɪᴀʟꜱ* 🌟 
+https://youtube.com/Tohidkhan_6332
+
+*ɢɪᴛʜᴜʙ* 🌟
+http://GitHub.com/Tohidkhan6332
+
+*Wᴇʙsɪᴛᴇ* 🌟
+https://tohid-khan-web.vercel.app/
+
+*TOHID-AI--WHATTSAPP-BOT* 🥀
+` 
                     });
 
                     // Clean up session after use
