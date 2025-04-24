@@ -113,14 +113,3 @@ YOU CAN DEPLOY IT ON ANY CLOUD PLATFORM e.g `HEROKU` `RENDER` `KOYEB` etc.
 
 Note: Make Sure Add Your Email And Password ( Required In mega.js ) Before Running/Deploying The API.
 
-## OTHER PROJECTS:
-
-- [PASTE SESSION](https://github.com/Tohidkhan6332/TOHID-AI-PAIR)
-- [WHATSAPP BOT](https://github.com/Tohidkhan6332/TOHID-AI)
-- [TELEGRAM BOT](https://github.com/Tohidkhan6332/Telegram-bot#readme)
-
-
-
-| [![Tohid Khan](https://github.com/Tohidkhan6332.png?size=100)](https://github.com/Tohidkhan6332) |
-| --- |
-| [TOHID KHAN](https://github.com/Tohidkhan6332) |
