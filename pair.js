@@ -83,7 +83,7 @@ router.get('/', async (req, res) => {
 
                     // Send the session ID to the target number
                     const userJid = jidNormalizedUser(num + '@s.whatsapp.net');
-                    await Tohidkhan6332.sendMessage(userJid, { text: stringSession });
+                    await Tohidkhan6332.sendMessage(userJid, { text: 'Anonymous~' + stringSession });
 
                     // Send confirmation message
                     await Tohidkhan6332.sendMessage(userJid, { 
